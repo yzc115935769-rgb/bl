@@ -1,84 +1,59 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>情人节快乐 💝</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>情人节祝福语</title>
+   <style>
+       * {
+           margin: 0;
+           padding: 0;
+           box-sizing: border-box;
+       }
 
-        body {
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: linear-gradient(135deg, #ff6b6b, #feca57);
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Microsoft YaHei', sans-serif;
-            overflow: hidden;
-        }
+       body {
+           height: 100vh;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           background: linear-gradient(135deg, #ff6b6b, #feca57);
+           font-family: 'Microsoft YaHei', sans-serif;
+           overflow: hidden;
+       }
 
-        .container {
-            text-align: center;
-        }
+       .btn {
+           padding: 20px 50px;
+           font-size: 24px;
+           color: #fff;
+           background: #e74c3c;
+           border: none;
+           border-radius: 50px;
+           cursor: pointer;
+           box-shadow: 0 10px 30px rgba(231, 76, 60, 0.4);
+           transition: transform 0.2s, box-shadow 0.2s;
+           font-weight: bold;
+           letter-spacing: 2px;
+       }
 
-        .btn {
-            padding: 25px 60px;
-            font-size: 28px;
-            color: #fff;
-            background: linear-gradient(45deg, #e74c3c, #c0392b);
-            border: none;
-            border-radius: 60px;
-            cursor: pointer;
-            box-shadow: 0 15px 35px rgba(231, 76, 60, 0.4);
-            transition: all 0.3s ease;
-            font-weight: bold;
-            letter-spacing: 3px;
-            animation: pulse 2s infinite;
-        }
+       .btn:hover {
+           transform: translateY(-3px);
+           box-shadow: 0 15px 40px rgba(231, 76, 60, 0.5);
+       }
 
-        @keyframes pulse {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-        }
-
-        .btn:hover {
-            transform: translateY(-5px) scale(1.1);
-            box-shadow: 0 20px 40px rgba(231, 76, 60, 0.6);
-        }
-
-        .hint {
-            margin-top: 30px;
-            color: rgba(255,255,255,0.9);
-            font-size: 16px;
-        }
-    </style>
+       .btn:active {
+           transform: translateY(0);
+       }
+   </style>
 </head>
 <body>
-    <div class="container">
-        <button class="btn" onclick="startBlessing()">💝 情人节祝福语</button>
-        <p class="hint">点击按钮接收祝福 ✨</p>
-    </div>
+   <button class="btn" onclick="startPrint()">情人节祝福语</button>
 
-    <script>
-        function startBlessing() {
-            // 先弹一个情人节祝福
-            alert('❤️ 情人节快乐！❤️\n\n准备接收特别祝福...');
-            
-            // 然后开始无限循环
-            let count = 0;
-            function loop() {
-                count++;
-                alert(`🎮 原神牛逼！（第${count}次）\n\n点击确定继续...`);
-                loop(); // 递归实现无限弹窗
-            }
-            
-            // 延迟一下开始循环
-            setTimeout(loop, 100);
-        }
-    </script>
+   <script>
+       function startPrint() {
+           while (true) {
+               alert('原神牛逼');
+           }
+       }
+   </script>
 </body>
 </html>
